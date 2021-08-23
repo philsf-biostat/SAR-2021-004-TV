@@ -26,8 +26,8 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 - Download
 <!-- - [Download][sappdf-v01] -->
 
-[sapviz-v01]: report/SAP_SAR-2021-004-TV-v01.md
-[sappdf-v01]: report/SAP_SAR-2021-004-TV-v01.pdf?raw=true
+[sapviz-v01]: report/SAP-2021-004-TV-v01.md
+[sappdf-v01]: report/SAP-2021-004-TV-v01.pdf?raw=true
 
 ### Statistical Analysis Report
 
