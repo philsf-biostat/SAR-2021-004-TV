@@ -26,8 +26,8 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 - Download
 <!-- - [Download][sappdf-v01] -->
 
-[sapviz-v01]: report/SAP_analise_dados_TV_2021-v01.md
-[sappdf-v01]: report/SAP_analise_dados_TV_2021-v01.pdf?raw=true
+[sapviz-v01]: report/SAP_SAR-2021-004-TV-v01.md
+[sappdf-v01]: report/SAP_SAR-2021-004-TV-v01.pdf?raw=true
 
 ### Statistical Analysis Report
 
@@ -47,14 +47,14 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 - Download
 <!-- - [Download][pdf-v01] -->
 
-[milestone-v01]: https://github.com/philsf-biostat/analise_dados_TV_2021/milestone/1
-[reportviz-v01]: report/analise_dados_TV_2021-v01.md
-[docx-v01]: report/analise_dados_TV_2021-v01.docx?raw=true
-[pdf-v01]: report/analise_dados_TV_2021-v01.pdf?raw=true
-[v01-project]: https://github.com/philsf-biostat/analise_dados_TV_2021/projects/1
+[milestone-v01]: https://github.com/philsf-biostat/SAR-2021-004-TV/milestone/1
+[reportviz-v01]: report/SAR-2021-004-TV-v01.md
+[docx-v01]: report/SAR-2021-004-TV-v01.docx?raw=true
+[pdf-v01]: report/SAR-2021-004-TV-v01.pdf?raw=true
+[v01-project]: https://github.com/philsf-biostat/SAR-2021-004-TV/projects/1
 
-[milestone-v02]: https://github.com/philsf-biostat/analise_dados_TV_2021/milestone/mmm02
-[reportviz-v02]: report/analise_dados_TV_2021-v02.md
-[docx-v02]: report/analise_dados_TV_2021-v02.docx?raw=true
-[pdf-v02]: report/analise_dados_TV_2021-v02.pdf?raw=true
-[v02-project]: https://github.com/philsf-biostat/analise_dados_TV_2021/projects/ppp02
+[milestone-v02]: https://github.com/philsf-biostat/SAR-2021-004-TV/milestone/mmm02
+[reportviz-v02]: report/SAR-2021-004-TV-v02.md
+[docx-v02]: report/SAR-2021-004-TV-v02.docx?raw=true
+[pdf-v02]: report/SAR-2021-004-TV-v02.pdf?raw=true
+[v02-project]: https://github.com/philsf-biostat/SAR-2021-004-TV/projects/ppp02
