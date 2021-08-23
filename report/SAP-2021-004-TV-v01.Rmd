@@ -1,7 +1,8 @@
 ---
 title: "Statistical Analysis Plan for title"
-author: '**From:** Felipe Figueiredo **To:** ___'
-date: '**Date: ** yyyy-mm-dd'
+subtitle: 'DOCUMENT: SAP-2021-004-TV-v01'
+author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
+date: '**Date:** yyyy-mm-dd'
 output:
   html_document:
     fig_caption: yes
@@ -19,7 +20,6 @@ output:
     fig_width: 6
     reference_docx: misc/style_SAP_en.docx
     toc: yes
-subtitle: 'SAP: SAP_analise_dados_TV_2021-v01'
 # toc-title: "Sumário"
 ---
 
@@ -118,3 +118,9 @@ This analysis will be performed using statistical software `R` version `r getRve
 # References
 
 # Appendix
+
+## Availability
+
+This document can be downloaded in the following address:
+
+`https://github.com/philsf-biostat/SAR-2021-004-TV/`
