@@ -2,7 +2,7 @@
 title: "Statistical Analysis Plan for title"
 subtitle: 'DOCUMENT: SAP-2021-004-TV-v01'
 author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
-date: '**Date:** yyyy-mm-dd'
+date: '**Date:** 2021-08-24'
 output:
   html_document:
     fig_caption: yes
@@ -49,31 +49,9 @@ kable(history)
 
 ---
 
-<!-- # Assinaturas -->
-
-<!-- ```{r, echo=FALSE} -->
-<!-- sig.field <- "__________________________" -->
-<!-- date.field <- "_____________" -->
-<!-- Stat <- c("Elaborador", "Nome", "Função", sig.field, date.field) -->
-<!-- Reviewer <- c("Revisado por", "", "", sig.field, date.field) -->
-<!-- Approver <- c("Verificado por", "", "", sig.field, date.field) -->
-<!-- Final.Approver <- c("Aprovação final", "", "", sig.field, date.field) -->
-
-<!-- sigs <- rbind( -->
-<!--   Stat -->
-<!--   , Reviewer -->
-<!--   , Approver -->
-<!--   , Final.Approver -->
-<!--   ) -->
-<!-- rownames(sigs) <- NULL -->
-<!-- colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data") -->
-
-<!-- # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf) -->
-<!-- kable(sigs) -->
-<!-- ``` -->
-
 # Abbreviations
 
+- ACL: anterior cruciate ligament
 - BMI: body mass index
 - LCL: lateral collateral ligament
 - LET: lateral extra-articular tenodesis
@@ -86,8 +64,8 @@ kable(history)
 
 ## Objectives
 
-Compare the baseline characteristics of patients undergoing ACL revision surgery wether or not they undergone the LET technique.
-Compare the rates of surgical failure and functional scores of patients undergoing ACL revision surgery wether or not they undergone the LET technique.
+Compare the baseline characteristics of patients undergoing ACL revision surgery whether or not they undergone the LET technique.
+Compare the rates of surgical failure and functional scores of patients undergoing ACL revision surgery whether or not they undergone the LET technique.
 
 ## Hypotheses
 
@@ -100,18 +78,18 @@ Lower ages are a risk factor.
 ## Raw data
 
 The raw data was provided in an Excel file with two sheets, one for each group (LET and No LET).
-As a first step of pre-processing the raw data was copied into a new sheet with both groups, with one observation (patient) per line.
+As a firsts processing step the raw data was copied into a new sheet with both groups, with one observation (patient) per line.
 The column structure of the resulting "clean" table corresponds to the original per-group tables.
 
-Variables in the raw datasheet were grouped into sections.
+Variables in the raw data sheet were grouped into sections.
 For this analysis only the baseline **demographic** characteristics and the variables in the **surgical data most recent revision ACLR** section were selected.
 
 Column names were adjusted to avoid repeated names, using suffixes to identify the section each variable originally came from, as follows:
 
-- section `concomitant injuries primary ACLR` - received the `pri.inj` suffix
-- section `Concomitant injuries most recent revision ACLR` - received the `inj` suffix
-- section `surgical data primary ACLR` - received the `pri` suffix
-- section `surgical data most recent revision ACLR` - names were kept as the original
+- section `concomitant injuries primary ACLR` -- received the `pri.inj` suffix
+- section `Concomitant injuries most recent revision ACLR` -- received the `inj` suffix
+- section `surgical data primary ACLR` -- received the `pri` suffix
+- section `surgical data most recent revision ACLR` -- names were kept as the original
 
 Some dates in `Date of last clinical visit` column (`Follow-up notes` data section) were typed with different separator symbols, and all values in this column were standardized to allow date format recognition.
 
@@ -127,26 +105,26 @@ The resulting "clean" raw data sheet was shared with the client for archival pur
 After the cleaning process the following variables were included in the analysis:
 
 - id
-- age
-- sex
-- bmi
-- let
-- stage
-- graft
-- graft_diameter
-- femoral_fixation
-- tibial_fixation
-- medial_meniscus
-- lateral_meniscus
-- cartilage
-- mcl
-- lcl
-- pcl
-- implant_hto
-- femoral_tunnel
-- tibial_tunnel
+- Age
+- Sex
+- BMI
+- LET
+- Stage
+- Graft
+- Graft_diameter
+- Femoral_fixation
+- Tibial_fixation
+- Medial_meniscus
+- Lateral_meniscus
+- Cartilage
+- MCL
+- LCL
+- PCL
+- Implant_hto
+- Femoral_tunnel
+- Tibial_tunnel
 
-All variables in the analytic set were labelled according to the raw data provided and values were labelled according to the data dictionary for the preparation of production-quality results tables and figures.
+All variables in the analytic set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
 
 The analytic dataset will be included in the private version of the report, and will be omitted from the public version of the report.
 
@@ -177,9 +155,19 @@ Variables to be considered for baseline comparison are:
 
 ### Descriptive analyses
 
+The epidemiological profile of each study group (LET and no LET) will be described at baseline.
+Demographic and clinical variables will be described as mean and standard deviation or as counts and proportions, as appropriate.
+Distributions will be summarized in tables and visualized in exploratory plots.
+
 ### Inferential analyses
 
+All comparisons will be performed as uni-variate analyses.
+Continuous variables will be compared between groups with the independent t test with Welch correction.
+Difference in distribution of categorical variables will be assessed with the Fisher exact test.
+
 ### Statistical modeling
+
+No adjustment for covariates will be performed.
 
 ## Significance and Confidence Intervals
 
@@ -188,18 +176,30 @@ All significance hypothesis tests and confidence intervals computed will be two-
 
 ## Study size and Power
 
+Raw data received has 70 observations corresponding to patients assessed at primary ACL surgery and ACL revision.
+Surgeries that employed the LET technique include 38 patients and 32 patients undergone surgery with LET technique.
+
+With these group sizes a t test can detect an effect size as large as
+**d = `r format.float(pwr::pwr.t2n.test(n1 = 38, n2 = 32, power = .8, sig.level = .05)$d)`**
+with 80% power and 5% significance level (Cohen, 1988).
+
 ### Statistical packages
 
 This analysis will be performed using statistical software `R` version `r getRversion()`.
 
 # Exceptions and Observations
 
+N/A.
+
 # References
+
+- **SAR-2021-004-TV-v01** -- title
+- Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Hillsdale, NJ: Lawrence Erlbaum.
 
 # Appendix
 
 ## Availability
 
-Both this analytic plan and the corresponding analysis report can be downloaded in the following address:
+Both this analytic plan and the corresponding analysis report (**SAR-2021-004-TV-v01**) can be downloaded in the following address:
 
 `https://github.com/philsf-biostat/SAR-2021-004-TV/`

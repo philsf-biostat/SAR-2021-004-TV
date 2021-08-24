@@ -13,7 +13,7 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 
 1. Descriptive analysis
 1. Inferential analysis
-1. Statistical models
+<!-- 1. Statistical models -->
 1. Power analysis
 
 ## Documents
@@ -23,8 +23,8 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 **SAP** - Statistical Analysis Plan
 
 - [Online visualization][sapviz-v01]
-- Download
-<!-- - [Download][sappdf-v01] -->
+- [Download][sappdf-v01]
+<!-- - Download -->
 
 [sapviz-v01]: report/SAP-2021-004-TV-v01.md
 [sappdf-v01]: report/SAP-2021-004-TV-v01.pdf?raw=true
