@@ -155,6 +155,7 @@ The analytic dataset will be included in the private version of the report, and 
 ## Primary and secondary outcomes
 
 The primary outcome of this analysis will be the difference in proportion of surgery failure between the two study groups.
+
 The secondary outcome will be the comparison of functional scores (TO BE DEFINED).
 
 ## Covariates
