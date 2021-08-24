@@ -28,8 +28,7 @@ inf_base <- dat %>%
 
 inf_diff <- inf_base %>%
   add_difference(test = all_continuous() ~ "cohens_d") %>%
-  modify_header(estimate ~ '**d**') %>%
-  modify_column_hide(all_stat_cols())
+  modify_header(estimate ~ '**d**')
 
 inf_p <- inf_base %>%
   # comparisons
@@ -38,7 +37,8 @@ inf_p <- inf_base %>%
     test = all_categorical() ~ "fisher.test",
     # use 3 digits in pvalue
     pvalue_fun = function(x) style_pvalue(x, digits = 3)
-  )
+  ) %>%
+  modify_column_hide(all_stat_cols())
 
-inf_baseline <- tbl_merge(list(inf_p, inf_diff)) %>%
+inf_baseline <- tbl_merge(list(inf_diff, inf_p)) %>%
   modify_spanning_header(everything() ~ NA)
