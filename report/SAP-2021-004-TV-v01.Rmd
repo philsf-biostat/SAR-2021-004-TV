@@ -84,7 +84,52 @@ kable(history)
 
 # Data cleaning
 
+The raw data was provided in an Excel file with two sheets, one for each group (LET and No LET).
+As a first step of pre-processing the raw data was copied into a new sheet with both groups, with one observation (patient) per line.
+The column structure of the resulting "clean" table corresponds to the original per-group tables.
+
+Variables in the raw datasheet were grouped into sections.
+For this analysis only the baseline **demographic** characteristics and the variables in the **surgical data most recent revision ACLR** section were selected.
+
+Column names were adjusted to avoid repeated names, using suffixes to identify the section each variable originally came from, as follows:
+
+- section `concomitant injuries primary ACLR` - received the `pri.inj` suffix
+- section `Concomitant injuries most recent revision ACLR` - received the `inj` suffix
+- section `surgical data primary ACLR` - received the `pri` suffix
+- section `surgical data most recent revision ACLR` - names were kept as the original
+
+Some dates in `Date of last clinical visit` column (`Follow-up notes` data section) were typed with different separator symbols, and all values in this column were standardized to allow date format recognition.
+
+There were two columns named `grade` (`Slope` data section), and they were both renamed `grade1` and `grade2`.
+
+The original raw data provided descriptive information for the encoding of each variable in the first line.
+A Data Dictionary was created from this information and was saved in a separate table for ease of consultation and processing.
+
+The resulting "clean" raw data sheet was shared with the client for archival purposes.
+
 # Study variables
+
+After the cleaning process the following variables were included in the analysis:
+
+- id
+- age
+- sex
+- bmi
+- let
+- stage
+- graft
+- graft_diameter
+- femoral_fixation
+- tibial_fixation
+- medial_meniscus
+- lateral_meniscus
+- cartilage
+- mcl
+- lcl
+- pcl
+- implant_hto
+- femoral_tunnel
+- tibial_tunnel
 
 The analytic dataset will be included in the private version of the report, and will be omitted from the public version of the report.
 
