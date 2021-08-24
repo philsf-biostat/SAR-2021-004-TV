@@ -100,7 +100,7 @@ A Data Dictionary was created from this information and was saved in a separate 
 
 The resulting "clean" raw data sheet was shared with the client for archival purposes.
 
-## Analytic dataset
+## Analytical dataset
 
 After the cleaning process the following variables were included in the analysis:
 
@@ -124,9 +124,9 @@ After the cleaning process the following variables were included in the analysis
 - Femoral_tunnel
 - Tibial_tunnel
 
-All variables in the analytic set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
+All variables in the analytical set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
 
-The analytic dataset will be included in the private version of the report, and will be omitted from the public version of the report.
+The analytical dataset will be included in the private version of the report, and will be omitted from the public version of the report.
 
 # Study variables
 
@@ -200,6 +200,6 @@ N/A.
 
 ## Availability
 
-Both this analytic plan and the corresponding analysis report (**SAR-2021-004-TV-v01**) can be downloaded in the following address:
+Both this analytical plan and the corresponding analysis report (**SAR-2021-004-TV-v01**) can be downloaded in the following address:
 
 `https://github.com/philsf-biostat/SAR-2021-004-TV/`
