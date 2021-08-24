@@ -28,6 +28,7 @@ inf_base <- dat %>%
 
 inf_diff <- inf_base %>%
   add_difference(all_continuous() ~ "cohens_d") %>%
+  modify_header(estimate ~ '**d**') %>%
   modify_column_hide(all_stat_cols())
 
 inf_p <- inf_base %>%
