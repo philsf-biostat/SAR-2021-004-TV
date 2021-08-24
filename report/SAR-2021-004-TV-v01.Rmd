@@ -104,6 +104,16 @@ This analysis was performed using statistical software `R` version `r getRversio
 
 ## Inferential analysis
 
+**Table 1** Patient characteristics at baseline.
+1 n (%); Mean (SD) 
+p-value: Fisher's exact test; Welch Two Sample t-test 
+
+```{r inf_baseline}
+inf_baseline %>% as_kable(align = "lc")
+```
+
+
+
 # Exceptions and Observations
 
 # Conclusions
