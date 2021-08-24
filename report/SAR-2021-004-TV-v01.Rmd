@@ -135,5 +135,8 @@ This document can be downloaded in the following address:
 Due to confidentiality the data-set used in this analysis cannot be shared online in the public version of this report.
 
 ```{r data}
-# pander(analytic)
+# print analytical of analytical_mockup whether it is the private or public version of the SAR
+# analytical %>%
+analytical_mockup %>%
+  pander(caption = "**Table A1** Analytical dataset")
 ```

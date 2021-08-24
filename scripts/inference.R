@@ -11,7 +11,7 @@ theme_gtsummary_mean_sd() # mean/sd
 
 # trick to add Cohen's d to table from https://stackoverflow.com/questions/68721020/
 
-inf_base <- dat %>%
+inf_base <- analytical %>%
   # select variables for table
   select(let, sex, age, bmi, graft_diameter, medial_meniscus, lateral_meniscus, cartilage) %>%
   # draw table
