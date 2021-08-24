@@ -67,5 +67,5 @@ dat <- dat %>%
   ) %>%
   # define surgical failure
   mutate(
-    failure = NA
+    # failure = NA
   )
