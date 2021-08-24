@@ -2,7 +2,7 @@
 title: "Statistical Analysis Plan for title"
 subtitle: 'DOCUMENT: SAP-2021-004-TV-v01'
 author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
-date: '**Date:** yyyy-mm-dd'
+date: '**Date:** 2021-08-24'
 output:
   html_document:
     fig_caption: yes
@@ -51,6 +51,7 @@ kable(history)
 
 # Abbreviations
 
+- ACL: anterior cruciate ligament
 - BMI: body mass index
 - LCL: lateral collateral ligament
 - LET: lateral extra-articular tenodesis
@@ -188,7 +189,11 @@ This analysis will be performed using statistical software `R` version `r getRve
 
 # Exceptions and Observations
 
+N/A.
+
 # References
+
+- **SAR-2021-004-TV-v01** - title
 
 # Appendix
 
