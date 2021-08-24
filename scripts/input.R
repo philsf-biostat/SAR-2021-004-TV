@@ -2,6 +2,7 @@
 library(readxl)
 # library(data.table)
 library(tidyverse)
+library(labelled)
 
 
 # data loading ------------------------------------------------------------
@@ -68,4 +69,29 @@ dat <- dat %>%
   # define surgical failure
   mutate(
     # failure = NA
+  )
+
+# labels ------------------------------------------------------------------
+
+dat <- dat %>%
+  set_variable_labels(
+    age = "Age (years)",
+    sex = "Sex",
+    bmi = "BMI (kg/m2)",
+    let = "LET",
+    stage = "Stage",
+    graft = "Graft type",
+    graft_diameter = "Graft diameter (mm)",
+    femoral_fixation = "Femoral fixation",
+    tibial_fixation = "Tibial fixation",
+    medial_meniscus = "Medial meniscus",
+    lateral_meniscus = "Lateral meniscus",
+    cartilage = "Cartilage",
+    mcl = "MCL",
+    lcl = "LCL",
+    pcl = "PCL",
+    bone = "Bone",
+    implant_hto = "Implant HTO",
+    femoral_tunnel = "Femoral tunnel",
+    tibial_tunnel = "Tibial tunnel",
   )
