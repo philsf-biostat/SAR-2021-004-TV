@@ -16,12 +16,12 @@ dat.raw <- read_excel("dataset/REVISION_ACL_DEIDENTIFIED_MASTER (4) PROMs_final 
 
 # data cleaning -----------------------------------------------------------
 
-dat <- dat.raw %>%
+analytical <- dat.raw %>%
   select(!ends_with(c("_pri", "_inj", "_pri_inj")))
 
 # data wrangling ----------------------------------------------------------
 
-dat <- dat %>%
+analytical <- analytical %>%
   # define factor levels according to data dictionary
   mutate(
     id = factor(id),
@@ -49,7 +49,7 @@ dat <- dat %>%
 
 # labels ------------------------------------------------------------------
 
-dat <- dat %>%
+analytical <- analytical %>%
   set_variable_labels(
     age = "Age (years)",
     sex = "Sex",
@@ -74,7 +74,7 @@ dat <- dat %>%
 
 # analytical dataset ------------------------------------------------------
 
-analytical <- dat %>%
+analytical <- analytical %>%
   # select analytic variables
   select(
       id,
