@@ -16,36 +16,12 @@ dat.raw <- read_excel("dataset/REVISION_ACL_DEIDENTIFIED_MASTER (4) PROMs_final 
 
 # data cleaning -----------------------------------------------------------
 
-dat <- dat.raw %>%
-  # select analytic variables
-  select(!ends_with(c("_pri", "_inj", "_pri_inj"))) %>%
-  select(
-    id,
-    age,
-    sex,
-    bmi,
-    let,
-    stage,
-    graft,
-    graft_diameter,
-    femoral_fixation,
-    tibial_fixation,
-    medial_meniscus,
-    lateral_meniscus,
-    cartilage,
-    mcl,
-    lcl,
-    pcl,
-    bone,
-    implant_hto,
-    femoral_tunnel,
-    tibial_tunnel,
-    )
-
+analytical <- dat.raw %>%
+  select(!ends_with(c("_pri", "_inj", "_pri_inj")))
 
 # data wrangling ----------------------------------------------------------
 
-dat <- dat %>%
+analytical <- analytical %>%
   # define factor levels according to data dictionary
   mutate(
     id = factor(id),
@@ -73,7 +49,7 @@ dat <- dat %>%
 
 # labels ------------------------------------------------------------------
 
-dat <- dat %>%
+analytical <- analytical %>%
   set_variable_labels(
     age = "Age (years)",
     sex = "Sex",
@@ -95,3 +71,36 @@ dat <- dat %>%
     femoral_tunnel = "Femoral tunnel",
     tibial_tunnel = "Tibial tunnel",
   )
+
+# analytical dataset ------------------------------------------------------
+
+analytical <- analytical %>%
+  # select analytic variables
+  select(
+      id,
+      age,
+      sex,
+      bmi,
+      let,
+      # stage,
+      graft,
+      graft_diameter,
+      # femoral_fixation,
+      # tibial_fixation,
+      medial_meniscus,
+      lateral_meniscus,
+      cartilage,
+      # mcl,
+      # lcl,
+      # pcl,
+      # bone,
+      # implant_hto,
+      # femoral_tunnel,
+      # tibial_tunnel,
+    )
+
+# mockup of analytical dataset for SAP and public SAR
+analytical_mockup <- tibble( id = c( "1", "2", "3", "...", as.character(nrow(analytical)) ) ) %>%
+  left_join(analytical %>% head(0), by = "id") %>%
+  mutate_all(as.character) %>%
+  replace(is.na(.), "")

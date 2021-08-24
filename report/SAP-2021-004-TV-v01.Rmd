@@ -75,6 +75,10 @@ Lower ages are a risk factor.
 
 # Data cleaning
 
+```{r cleaning, include=FALSE}
+source("scripts/input.R", encoding = 'UTF-8')
+```
+
 ## Raw data
 
 The raw data was provided in an Excel file with two sheets, one for each group (LET and No LET).
@@ -100,33 +104,19 @@ A Data Dictionary was created from this information and was saved in a separate 
 
 The resulting "clean" raw data sheet was shared with the client for archival purposes.
 
-## Analytic dataset
+## Analytical dataset
 
 After the cleaning process the following variables were included in the analysis:
 
-- id
-- Age
-- Sex
-- BMI
-- LET
-- Stage
-- Graft
-- Graft_diameter
-- Femoral_fixation
-- Tibial_fixation
-- Medial_meniscus
-- Lateral_meniscus
-- Cartilage
-- MCL
-- LCL
-- PCL
-- Implant_hto
-- Femoral_tunnel
-- Tibial_tunnel
+```{r}
+analytical_mockup %>%
+  pander(caption = "**Table 1** Analytical dataset structure after variable selection and cleaning.")
+```
 
-All variables in the analytic set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
 
-The analytic dataset will be included in the private version of the report, and will be omitted from the public version of the report.
+All variables in the analytical set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
+
+The analytical dataset will be included in the private version of the report, and will be omitted from the public version of the report.
 
 # Study variables
 
@@ -200,6 +190,6 @@ N/A.
 
 ## Availability
 
-Both this analytic plan and the corresponding analysis report (**SAR-2021-004-TV-v01**) can be downloaded in the following address:
+Both this analytical plan and the corresponding analysis report (**SAR-2021-004-TV-v01**) can be downloaded in the following address:
 
 `https://github.com/philsf-biostat/SAR-2021-004-TV/`
