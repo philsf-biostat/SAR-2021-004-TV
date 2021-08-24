@@ -4,6 +4,7 @@
 # library(skimr) # skim
 # library(tableone)
 # library(gmodels) # CrossTable
+library(gtsummary)
 
 # exploratory -------------------------------------------------------------
 

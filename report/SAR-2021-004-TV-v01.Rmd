@@ -83,7 +83,7 @@ kable(history)
 # Methods
 
 ```{r results, include=FALSE}
-# source("scripts/results.R", encoding = 'UTF-8')
+source("scripts/results.R", encoding = 'UTF-8')
 ```
 
 ## Variables
@@ -103,6 +103,16 @@ This analysis was performed using statistical software `R` version `r getRversio
 ## Study population and follow up
 
 ## Inferential analysis
+
+**Table 1** Patient characteristics at baseline.
+1 n (%); Mean (SD) 
+p-value: Fisher's exact test; Welch Two Sample t-test 
+
+```{r inf_baseline}
+inf_baseline %>% as_kable(align = "lcccccc")
+```
+
+
 
 # Exceptions and Observations
 
