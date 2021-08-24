@@ -175,6 +175,13 @@ All significance hypothesis tests and confidence intervals computed will be two-
 
 ## Study size and Power
 
+Raw data received has 70 observations corresponding to patients assessed at primary ACL surgery and ACL revision.
+Surgeries that employed the LET technique include 38 patients and 32 patients undergone surgery with LET technique.
+
+With these group sizes a t test can detect an effect size as large as
+**d = `r format.float(pwr::pwr.t2n.test(n1 = 38, n2 = 32, power = .8, sig.level = .05)$d)`**
+with 80% power and 5% significance level.
+
 ### Statistical packages
 
 This analysis will be performed using statistical software `R` version `r getRversion()`.
