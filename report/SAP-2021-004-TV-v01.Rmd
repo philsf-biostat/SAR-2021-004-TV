@@ -74,6 +74,12 @@ kable(history)
 
 # Abbreviations
 
+- BMI: body mass index
+- LCL: lateral collateral ligament
+- LET: lateral extra-articular tenodesis
+- MCL: medial collateral ligament
+- PCL: posterior cruciate ligament
+
 # Introduction
 
 ## Context
@@ -133,11 +139,16 @@ After the cleaning process the following variables were included in the analysis
 - femoral_tunnel
 - tibial_tunnel
 
+All variables in the analytic set were labelled according to the raw data provided and values were labelled according to the data dictionary for the preparation of production-quality results tables and figures.
+
 The analytic dataset will be included in the private version of the report, and will be omitted from the public version of the report.
 
 # Study variables
 
 ## Primary and secondary outcomes
+
+The primary outcome of this analysis is the difference in surgery failure between the two study groups.
+The secondary outcomes are the differences between the baseline demographic variables Age, Sex and BMI.
 
 ## Covariates
 
