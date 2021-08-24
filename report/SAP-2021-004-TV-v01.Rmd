@@ -177,6 +177,10 @@ Variables to be considered for baseline comparison are:
 
 ### Descriptive analyses
 
+The epidemiological profile of each study group (LET and no LET) will be described at baseline.
+Demographic and clinical variables will be described as mean and standard deviation or as counts and proportions, as appropriate.
+Distributions will be summarized in tables and visualized in exploratory plots.
+
 ### Inferential analyses
 
 ### Statistical modeling
