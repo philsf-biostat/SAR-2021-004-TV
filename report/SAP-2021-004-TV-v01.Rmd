@@ -199,6 +199,6 @@ This analysis will be performed using statistical software `R` version `r getRve
 
 ## Availability
 
-This document can be downloaded in the following address:
+Both this analytic plan and the corresponding analysis report can be downloaded in the following address:
 
 `https://github.com/philsf-biostat/SAR-2021-004-TV/`
