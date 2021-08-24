@@ -181,7 +181,7 @@ Surgeries that employed the LET technique include 38 patients and 32 patients un
 
 With these group sizes a t test can detect an effect size as large as
 **d = `r format.float(pwr::pwr.t2n.test(n1 = 38, n2 = 32, power = .8, sig.level = .05)$d)`**
-with 80% power and 5% significance level.
+with 80% power and 5% significance level (Cohen, 1988).
 
 ### Statistical packages
 
@@ -194,11 +194,12 @@ N/A.
 # References
 
 - **SAR-2021-004-TV-v01** -- title
+- Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd ed.). Hillsdale, NJ: Lawrence Erlbaum.
 
 # Appendix
 
 ## Availability
 
-Both this analytic plan and the corresponding analysis report can be downloaded in the following address:
+Both this analytic plan and the corresponding analysis report (**SAR-2021-004-TV-v01**) can be downloaded in the following address:
 
 `https://github.com/philsf-biostat/SAR-2021-004-TV/`
