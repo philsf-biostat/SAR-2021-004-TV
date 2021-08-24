@@ -148,7 +148,16 @@ The analytic dataset will be included in the private version of the report, and 
 ## Primary and secondary outcomes
 
 The primary outcome of this analysis is the difference in surgery failure between the two study groups.
-The secondary outcomes are the differences between the baseline demographic variables Age, Sex and BMI.
+
+The secondary outcomes are the distribution differences between the two study groups on the following baseline characteristics:
+
+- Age
+- Sex
+- BMI
+- Graft diameter
+- Medial meniscus
+- Lateral meniscus
+- Cartilage
 
 ## Covariates
 
