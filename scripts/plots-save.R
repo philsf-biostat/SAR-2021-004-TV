@@ -9,8 +9,8 @@ inf_baseline %>% as_gt() %>% gt::as_rtf() %>% writeLines(con = "report/SAR-2021-
 
 # ggsave(filename = "figures/plot.png", plot = gg)
 
-ggsave("figures/distr_age.png", plot = gg.age, height = height, width = width)
-ggsave("figures/distr_sex.png", plot = gg.sex, height = height, width = width)
-ggsave("figures/distr_bmi.png", plot = gg.bmi, height = height, width = width)
-ggsave("figures/distr_fu.png", plot = gg.followup, height = height, width = width)
+ggsave("figures/distr_age.png", plot = gg.age, height = height, width = width, units = "in")
+ggsave("figures/distr_sex.png", plot = gg.sex, height = height, width = width, units = "in")
+ggsave("figures/distr_bmi.png", plot = gg.bmi, height = height, width = width, units = "in")
+ggsave("figures/distr_fu.png", plot = gg.followup, height = height, width = width, units = "in")
 
