@@ -72,27 +72,77 @@ kable(history)
 <!-- kable(sigs) -->
 <!-- ``` -->
 
-# Abbreviations
-
-# Introduction
-
-## Objectives
-
-## Data reception and cleaning
-
-# Methods
-
 ```{r results, include=FALSE}
 source("scripts/results.R", encoding = 'UTF-8')
 ```
 
-## Variables
+# Abbreviations
+
+- ACL: anterior cruciate ligament
+- ACLR: ACL revision
+- BMI: body mass index
+- LCL: lateral collateral ligament
+- LET: lateral extra-articular tenodesis
+- MCL: medial collateral ligament
+- PCL: posterior cruciate ligament
+
+# Introduction
+
+## Context
+
+## Objectives
+
+Compare the baseline characteristics of patients undergoing ACL revision (ACLR) surgery whether or not they the LET technique was employed in the ACLR.
+
+## Hypotheses
+
+LET and no LET groups are comparable at baseline.
+
+## Data reception and cleaning
+
+In total there were 126 variables in the dataset received.
+Variables in the raw data sheet were grouped into sections.
+For this analysis only the baseline **demographic** characteristics and the variables in the **surgical data most recent revision ACLR** section were selected.
+
+All variables in the analytical set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
+
+After the cleaning process `r ncol(analytical)` variables were included in the analysis with `r nrow(ncol)` observations.
+Table 1 shows the structure of the analytical dataset.
+
+# Methods
+
+## Study Variables
 
 ### Primary and secondary outcomes
 
+This analysis describes the epidemiological characteristics of surgical patients that undergone ACLR, and no endpoints will be assessed.
+
 ### Covariates
 
+The distribution of the characteristics will be compared at baseline between the two study groups.
+Variables to be considered for baseline comparison are:
+
+- Age
+- Sex
+- BMI
+- Graft diameter
+- Medial meniscus
+- Lateral meniscus
+- Cartilage
+
 ## Statistical analyses
+
+The epidemiological profile of each study group (LET and no LET) will be described at baseline.
+Demographic and clinical variables will be described as mean and standard deviation or as counts and proportions, as appropriate.
+Distributions will be summarized in tables and visualized in exploratory plots.
+
+All comparisons will be performed as univariate analyses.
+Continuous variables will be compared between groups with the independent t test with Welch correction.
+Difference in distribution of categorical variables will be assessed with the Fisher exact test.
+No adjustment for covariates will be performed.
+
+All analyses will be performed using the significance level of 5%.
+All significance hypothesis tests and confidence intervals computed will be two-tailed.
 
 ### Statistical packages
 
