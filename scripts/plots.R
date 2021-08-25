@@ -9,7 +9,7 @@ theme_set(theme_classic())
 ## demographic
 gg.age <- analytical %>%
   ggplot(aes(age, ..count../sum(..count..))) +
-  geom_histogram(binwidth = 10) +
+  geom_histogram(binwidth = 10, fill = "steelblue") +
   scale_y_continuous(labels = scales::label_percent()) +
   labs(x = "Age (years)", y = "")
 
@@ -18,12 +18,12 @@ gg.sex <- analytical %>%
   geom_bar(position = "fill") +
   scale_fill_brewer(palette = "Paired") +
   scale_y_continuous(labels = scales::label_percent()) +
+  theme(legend.position = "top") +
   labs(x = "", y = "")
 
-gg.bmi <- analytical %>%
+gg.bmi <-analytical %>%
   ggplot(aes(bmi, ..count../sum(..count..))) +
-  geom_histogram(binwidth = 5) +
-  scale_fill_brewer(palette = "Paired") +
+  geom_histogram(binwidth = 5, fill = "steelblue") +
   scale_y_continuous(labels = scales::label_percent()) +
   labs(x = "BMI (kg/m2)", y = "")
 
@@ -32,8 +32,9 @@ gg.bmi <- analytical %>%
 year_sec <- duration(1, "year") / duration(1, "second")
 
 gg.followup <- data.raw %>%
-  transmute(fu = as.duration(interval(dos_pri, dos)) ) %>%
+  transmute(let, fu = as.duration(interval(dos_pri, dos)) ) %>%
   ggplot(aes(fu / year_sec, ..count../sum(..count..))) + # seconds in 1 year
-  geom_histogram(binwidth = 5) +
+  geom_histogram(binwidth = 5, fill = "steelblue") +
   scale_y_continuous(labels = scales::label_percent()) +
   labs(x = "Follow up time (years)", y = "")
+
