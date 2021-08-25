@@ -81,6 +81,7 @@ source("scripts/results.R", encoding = 'UTF-8')
 - ACL: anterior cruciate ligament
 - ACLR: ACL revision
 - BMI: body mass index
+- CI: Confidence Interval
 - LCL: lateral collateral ligament
 - LET: lateral extra-articular tenodesis
 - MCL: medial collateral ligament
@@ -162,11 +163,15 @@ Patients had BMI values ranging from 19 to 40 kg/m2 with average BMI of 26.6 kg/
 Primary ACL surgeries recorded occurred between 1984-01-01 and 2017-08-30, and ACL revisions occurred between 2010-03-09 and 2020-07-17.
 Per patient follow up time between the two primary ACL and ACLR ranged from 33 weeks to 27 years, with an average followup time of 6.57 years, and median follow-up time of 4.08 years.
 
+The distributions of these variables can be seen in Figures A1--A4 (Section 8.1).
+
 ## Inferential analysis
 
-**Table 1** Patient characteristics at baseline.
-1 n (%); Mean (SD) 
-p-value: Fisher's exact test; Welch Two Sample t-test 
+Table: **Table 1** Patient characteristics at baseline.  
+n (%); Mean (SD);
+d = Cohen's D;
+CI = Confidence Interval;
+p-value = Fisher's exact test; Welch Two Sample t-test.
 
 ```{r inf_baseline}
 inf_baseline %>% as_kable(align = "lcccccc")
