@@ -40,12 +40,12 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 
 <!-- --- -->
 
-**Version 01** - [Ongoing][v01-project].
-<!-- **Version 01** - [Concluded][v01-project]. -->
+<!-- **Version 01** - [Ongoing][v01-project]. -->
+**Version 01** - [Concluded][v01-project].
 
 - [Online visualization][reportviz-v01]
-- Download
-<!-- - [Download][pdf-v01] -->
+- [Download][pdf-v01]
+<!-- - Download -->
 
 [milestone-v01]: https://github.com/philsf-biostat/SAR-2021-004-TV/milestone/1
 [reportviz-v01]: report/SAR-2021-004-TV-v01.md

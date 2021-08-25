@@ -2,7 +2,7 @@
 title: "Epidemiological profile of patients undergoing ACLR and comparison of baseline characteristics between usage of the LET surgical technique"
 subtitle: 'DOCUMENT: SAR-2021-004-TV-v01'
 author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
-date: '**Date:** yyyy-mm-dd'
+date: '**Date:** 2021-08-25'
 output:
   html_document:
     fig_caption: yes
@@ -81,10 +81,12 @@ source("scripts/results.R", encoding = 'UTF-8')
 - ACL: anterior cruciate ligament
 - ACLR: ACL revision
 - BMI: body mass index
+- CI: Confidence Interval
 - LCL: lateral collateral ligament
 - LET: lateral extra-articular tenodesis
 - MCL: medial collateral ligament
 - PCL: posterior cruciate ligament
+- SD: standard deviation
 
 # Introduction
 
@@ -153,21 +155,69 @@ This analysis was performed using statistical software `R` version `r getRversio
 
 ## Study population and follow up
 
-## Inferential analysis
+A total of 70 patients that undergone ACLR surgery were included in the study, where the LET technique was used in 32 patients and 38 acted as a control.
+Ages varied between 14 and 55 years, with an average age of 27 years with a SD of 10 years.
+There were 29 (41%) male patients and 41 (59%) female.
+Patients had BMI values ranging from 19 to 40 kg/m2 with average BMI of 26.6 kg/m2 and SD 4.5 kg/m2.
 
-**Table 1** Patient characteristics at baseline.
-1 n (%); Mean (SD) 
-p-value: Fisher's exact test; Welch Two Sample t-test 
+Primary ACL surgeries recorded occurred between 1984-01-01 and 2017-08-30, and ACL revisions occurred between 2010-03-09 and 2020-07-17.
+Per patient follow up time between the two primary ACL and ACLR ranged from 33 weeks to 27 years, with an average followup time of 6.57 years, and median follow-up time of 4.08 years.
+
+The distributions of these variables can be seen in Figures A1--A4 (Section 8.1).
+
+The typical profile of the patient that required ACLR surgery was a 27 years female with an average BMI of 26.6 kg/m2.
+
+## Surgical characteristics and baseline comparison
+
+Patients included in the study required grafts with diameters ranging from 19 to 40 mm.
+Average graft diameter used was 9.6 mm with an SD of 0.7 mm.
+Most patients did not require procedures in the medial meniscus (47%), the lateral meniscus (57%) or in the cartilage (96%).
+A total of 14 patients (20%) had partial resection in the medial meniscus, indicating a possibility of arthrosis in the knee joint, and 13 (19%) had partial resection in the lateral meniscus.
+
+None of the characteristics evaluated in this study indicated significant differences when using the LET procedure compared to not using it (Table 1).
+Demographic characteristics had comparable distributions for
+sex (p =	0.334),
+age (Cohen's D = 0.32, 95% CI = -0.16, 0.80, p =	0.187) and
+BMI (Cohen's D = 0.20, 95% CI = -0.33, 0.73, p =	0.462).
+Surgical characteristics also had comparable distributions for
+graft diameter (Cohen's D = 0.04, 95% CI = -0.43, 0.51, p =	0.877),
+medial meniscus (p = 0.582),
+lateral meniscus (p = 0.521) and
+cartilage (p = 0.496).
+
+Table: **Table 1** Patient characteristics at baseline.  
+n (%); Mean (SD);
+d = Cohen's D;
+CI = Confidence Interval;
+p-value = Fisher's exact test; Welch Two Sample t-test.
 
 ```{r inf_baseline}
 inf_baseline %>% as_kable(align = "lcccccc")
 ```
 
-
+All of the observed Cohen's D standardized mean differences (Cohen, 1988) range from very small (d = 0.04) to small (d = 0.32).
+Note that the minimum effect size detectable by this study would be of a medium effect size (d = 0.68, see **SAP-2021-004-TV-v01**) or larger.
 
 # Exceptions and Observations
 
+N/A.
+
 # Conclusions
+
+The typical profile patient that required ACLR surgery was a 27 years female with an average BMI of 26.6 kg/m2.
+
+None of the characteristics evaluated in this study indicated significant differences when using the LET procedure compared to not using it.
+Patients had comparable distributions for demographic characteristics such as 
+sex (p = 0.334),
+age (p = 0.187, d = 0.32) and
+BMI (p = 0.462, d = 0.20),
+as well as surgical characteristics such as
+graft diameter (p = 0.877, d = 0.04),
+medial meniscus (p = 0.582),
+lateral meniscus (p = 0.521) and
+cartilage (p = 0.496).
+
+Therefore, LET and no LET groups are comparable at baseline.
 
 # References
 
@@ -177,6 +227,23 @@ inf_baseline %>% as_kable(align = "lcccccc")
 # Appendix
 
 ## Exploratory data analysis
+
+![](../figures/distr_age.png)
+
+**Figure A1** Distribution of age in the study population.
+
+![](../figures/distr_sex.png)
+
+**Figure A2** Distribution of sex in the study population, according to the study group.
+
+![](../figures/distr_bmi.png)
+
+**Figure A3** Distribution of BMI in the study population.
+
+![](../figures/distr_fu.png)
+
+**Figure A4** Distritubion of follow up time in the study population.
+
 
 ## Availability
 
