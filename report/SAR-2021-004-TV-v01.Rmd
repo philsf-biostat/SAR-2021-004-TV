@@ -167,12 +167,23 @@ The distributions of these variables can be seen in Figures A1--A4 (Section 8.1)
 
 The typical profile of the patient that required ACLR surgery was a 27 years female with an average BMI of 26.6 kg/m2.
 
-## Inferential analysis
+## Surgical characteristics and baseline comparison
 
 Patients included in the study required grafts with diameters ranging from 19 to 40 mm.
 Average graft diameter used was 9.6 mm with an SD of 0.7 mm.
 Most patients did not require procedures in the medial meniscus (47%), the lateral meniscus (57%) or in the cartilage (96%).
 A total of 14 patients (20%) had partial resection in the medial meniscus, indicating a possibility of arthrosis in the knee joint, and 13 (19%) had partial resection in the lateral meniscus.
+
+None of the characteristics evaluated in this study indicated significant differences when using the LET procedure compared to not using it (Table 1).
+Demographic characteristics had comparable distributions for
+sex (p =	0.334),
+age (Cohen's D = 0.32, 95% CI = -0.16, 0.80, p =	0.187) and
+BMI (Cohen's D = 0.20, 95% CI = -0.33, 0.73, p =	0.462).
+Surgical characteristics also had comparable distributions for
+graft diameter (Cohen's D = 0.04, 95% CI = -0.43, 0.51, p =	0.877),
+medial meniscus (p = 0.582),
+lateral meniscus (p = 0.521) and
+cartilage (p = 0.496).
 
 Table: **Table 1** Patient characteristics at baseline.  
 n (%); Mean (SD);
