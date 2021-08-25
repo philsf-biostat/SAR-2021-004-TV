@@ -149,7 +149,7 @@ Distributions will be summarized in tables and visualized in exploratory plots.
 
 ### Inferential analyses
 
-All comparisons will be performed as uni-variate analyses.
+All comparisons will be performed as univariate analyses.
 Continuous variables will be compared between groups with the independent t test with Welch correction.
 Difference in distribution of categorical variables will be assessed with the Fisher exact test.
 
