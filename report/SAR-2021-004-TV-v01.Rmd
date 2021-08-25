@@ -159,6 +159,9 @@ Ages varied between 14 and 55 years, with an average age of 27 years with a SD o
 There were 29 (41%) male patients and 41 (59%) female.
 Patients had BMI values ranging from 19 to 40 kg/m2 with average BMI of 26.6 kg/m2 and SD 4.5 kg/m2.
 
+Primary ACL surgeries recorded occurred between 1984-01-01 and 2017-08-30, and ACL revisions occurred between 2010-03-09 and 2020-07-17.
+Per patient follow up time between the two primary ACL and ACLR ranged from 33 weeks to 27 years, with an average followup time of 6.57 years, and median follow-up time of 4.08 years.
+
 ## Inferential analysis
 
 **Table 1** Patient characteristics at baseline.
