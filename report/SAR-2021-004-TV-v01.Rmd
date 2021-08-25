@@ -85,6 +85,7 @@ source("scripts/results.R", encoding = 'UTF-8')
 - LET: lateral extra-articular tenodesis
 - MCL: medial collateral ligament
 - PCL: posterior cruciate ligament
+- SD: standard deviation
 
 # Introduction
 
@@ -152,6 +153,11 @@ This analysis was performed using statistical software `R` version `r getRversio
 # Results
 
 ## Study population and follow up
+
+A total of 70 patients that undergone ACLR surgery were included in the study, where the LET technique was used in 32 patients and 38 acted as a control.
+Ages varied between 14 and 55 years, with an average age of 27 years with a SD of 10 years.
+There were 29 (41%) male patients and 41 (59%) female.
+Patients had BMI values ranging from 19 to 40 kg/m2 with average BMI of 26.6 kg/m2 and SD 4.5 kg/m2.
 
 ## Inferential analysis
 
