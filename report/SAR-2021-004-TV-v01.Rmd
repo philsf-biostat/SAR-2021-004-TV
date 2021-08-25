@@ -195,7 +195,8 @@ p-value = Fisher's exact test; Welch Two Sample t-test.
 inf_baseline %>% as_kable(align = "lcccccc")
 ```
 
-
+All of the observed Cohen's D standardized mean differences (Cohen, 1988) range from very small (d = 0.04) to small (d = 0.32).
+Note that the minimum effect size detectable by this study would be of a medium effect size (d = 0.68, see **SAP-2021-004-TV-v01**) or larger.
 
 # Exceptions and Observations
 
