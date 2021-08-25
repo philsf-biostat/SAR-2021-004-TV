@@ -65,14 +65,11 @@ kable(history)
 
 ## Objectives
 
-Compare the baseline characteristics of patients undergoing ACL revision surgery whether or not they undergone the LET technique.
-Compare the rates of surgical failure and functional scores of patients undergoing ACL revision surgery whether or not they undergone the LET technique.
+Compare the baseline characteristics of patients undergoing ACL revision (ACLR) surgery whether or not they the LET technique was employed in the ACLR.
 
 ## Hypotheses
 
 LET and no LET groups are comparable at baseline.
-
-Lower ages are a risk factor.
 
 # Data cleaning
 
@@ -125,9 +122,7 @@ The analytical dataset will be included in the private version of the report, an
 
 ## Primary and secondary outcomes
 
-The primary outcome of this analysis will be the difference in proportion of surgery failure between the two study groups.
-
-The secondary outcome will be the comparison of functional scores (TO BE DEFINED).
+This analysis describes the epidemiological characteristics of surgical patients that undergone ACLR, and no endpoints will be assessed.
 
 ## Covariates
 
