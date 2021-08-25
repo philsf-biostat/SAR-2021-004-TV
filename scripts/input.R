@@ -10,18 +10,18 @@ library(labelled)
 # raw.data <- readxl::read_excel("dataset/file.xls")
 
 # raw.data <- data.table(raw.data)
-dat.raw <- read_excel("dataset/REVISION_ACL_DEIDENTIFIED_MASTER (4) PROMs_final LETvs No LET.xlsx",
+data.raw <- read_excel("dataset/REVISION_ACL_DEIDENTIFIED_MASTER (4) PROMs_final LETvs No LET.xlsx",
                   sheet = "Clean", skip = 1) %>%
   janitor::clean_names()
 
 # data cleaning -----------------------------------------------------------
 
-analytical <- dat.raw %>%
-  select(!ends_with(c("_pri", "_inj", "_pri_inj")))
+# data.raw <- data.raw %>%
+#   select(!ends_with(c("_pri", "_inj", "_pri_inj")))
 
 # data wrangling ----------------------------------------------------------
 
-analytical <- analytical %>%
+data.raw <- data.raw %>%
   # define factor levels according to data dictionary
   mutate(
     id = factor(id),
@@ -49,7 +49,7 @@ analytical <- analytical %>%
 
 # labels ------------------------------------------------------------------
 
-analytical <- analytical %>%
+data.raw <- data.raw %>%
   set_variable_labels(
     age = "Age (years)",
     sex = "Sex",
@@ -74,7 +74,7 @@ analytical <- analytical %>%
 
 # analytical dataset ------------------------------------------------------
 
-analytical <- analytical %>%
+analytical <- data.raw %>%
   # select analytic variables
   select(
       id,
