@@ -103,8 +103,8 @@ analytical <- data.raw %>%
       # femoral_tunnel,
       # tibial_tunnel,
       fu_months,
-      age_primary_aclr,
-      primary_acl_to_most_recent_revision_acl,
+      # age_primary_aclr,
+      # primary_acl_to_most_recent_revision_acl,
       mtps,
     )
 
