@@ -52,7 +52,7 @@ data.raw <- data.raw %>%
 
 data.raw <- data.raw %>%
   set_variable_labels(
-    age = "Age (years)",
+    age = "Age at last ACLR (years)",
     sex = "Sex",
     bmi = "BMI (kg/m2)",
     let = "LET",
@@ -71,6 +71,10 @@ data.raw <- data.raw %>%
     implant_hto = "Implant HTO",
     femoral_tunnel = "Femoral tunnel",
     tibial_tunnel = "Tibial tunnel",
+    fu_months = "Follow up (months)",
+    age_primary_aclr = "Age at primary ACL (years)",
+    primary_acl_to_most_recent_revision_acl = "Time from primary ACL to most recent revision (years)",
+    mtps = "Medial tibial posterior slope",
   )
 
 # analytical dataset ------------------------------------------------------
@@ -98,6 +102,10 @@ analytical <- data.raw %>%
       # implant_hto,
       # femoral_tunnel,
       # tibial_tunnel,
+      fu_months,
+      age_primary_aclr,
+      primary_acl_to_most_recent_revision_acl,
+      mtps,
     )
 
 # mockup of analytical dataset for SAP and public SAR
