@@ -275,7 +275,8 @@ Due to confidentiality the data-set used in this analysis cannot be shared onlin
 
 ```{r data}
 # print analytical of analytical_mockup whether it is the private or public version of the SAR
-# analytical %>%
-analytical_mockup %>%
+analytical %>%
   pander(caption = "**Table A1** Analytical dataset")
+analytical_mockup %>%
+  pander(caption = "**Table A1** Analytical dataset structure")
 ```
