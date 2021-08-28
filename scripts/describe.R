@@ -14,7 +14,7 @@ analytical %>%
 
 # follow up
 data.raw %>%
-  transmute(dos_pri, dos, fu = as.duration(interval(dos_pri, dos)) ) %>%
+  transmute(fu_months = duration(fu_months, "month") ) %>%
   summary()
 
 ## interpret cohenD effect sizes

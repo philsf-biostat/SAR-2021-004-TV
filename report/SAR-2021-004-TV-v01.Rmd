@@ -164,6 +164,8 @@ Patients had BMI values ranging from 19 to 40 kg/m2 with average BMI of 26.6 kg/
 Primary ACL surgeries recorded occurred between 1984-01-01 and 2017-08-30, and ACL revisions occurred between 2010-03-09 and 2020-07-17.
 Per patient follow up time between the two primary ACL and ACLR ranged from 33 weeks to 27 years, with an average followup time of 6.57 years, and median follow-up time of 4.08 years.
 
+The follow up of patients after ACLR ranged from 2 years to 10.3 years, with an average follow up of 4.18 years and median 3.08 years.
+
 The distributions of these variables can be seen in Figures A1 -- A5 (Section 8.1).
 
 The typical profile of the patient that required ACLR surgery was a 27 years female with an average BMI of 26.6 kg/m2.
