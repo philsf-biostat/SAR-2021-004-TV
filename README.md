@@ -7,6 +7,8 @@
 
 # Comparison of baseline characteristics of patients undergoing ACLR under usage of the LET surgical technique
 
+Compare the baseline demographic and clinical characteristics of patients undergoing Anterior Cruciate Ligament Revision surgery whether or not they the Lateral Extra-articular Tenodesis technique was employed.
+
 Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 2021)
 
 ## Analyses performed
