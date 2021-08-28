@@ -1,5 +1,5 @@
 ---
-title: "Epidemiological profile of patients undergoing ACLR and comparison of baseline characteristics between usage of the LET surgical technique"
+title: "Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique"
 subtitle: 'DOCUMENT: SAR-2021-004-TV-v01'
 author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
 date: '**Date:** 2021-08-25'
@@ -95,7 +95,7 @@ source("scripts/results.R", encoding = 'UTF-8')
 
 ## Objectives
 
-Compare the baseline characteristics of patients undergoing ACL revision (ACLR) surgery whether or not they the LET technique was employed in the ACLR.
+Compare the baseline demographic and clinical characteristics of patients undergoing Anterior Cruciate Ligament Revision surgery whether or not they the Lateral Extra-articular Tenodesis technique was employed.
 
 ## Hypotheses
 
@@ -156,35 +156,41 @@ This analysis was performed using statistical software `R` version `r getRversio
 
 ## Study population and follow up
 
-A total of 70 patients that undergone ACLR surgery were included in the study, where the LET technique was used in 32 patients and 38 acted as a control.
+A total of 69 patients that undergone ACLR surgery were included in the study, where the LET technique was used in 31 patients and 38 acted as a control.
 Ages varied between 14 and 55 years, with an average age of 27 years with a SD of 10 years.
-There were 29 (41%) male patients and 41 (59%) female.
-Patients had BMI values ranging from 19 to 40 kg/m2 with average BMI of 26.6 kg/m2 and SD 4.5 kg/m2.
+There were 28 (41%) male patients and 41 (59%) female.
+Patients had BMI values ranging from 20.5 to 40 kg/m2 with average BMI of 26.8 kg/m2 and median 26 kg/m2.
 
-Primary ACL surgeries recorded occurred between 1984-01-01 and 2017-08-30, and ACL revisions occurred between 2010-03-09 and 2020-07-17.
-Per patient follow up time between the two primary ACL and ACLR ranged from 33 weeks to 27 years, with an average followup time of 6.57 years, and median follow-up time of 4.08 years.
+Primary ACL surgeries recorded occurred between 1984-01-01 and 2017-08-30, and ACL revisions occurred between 2010-03-09 and 2019-05-31.
+Per patient time between the primary ACL and the most recent ACLR ranged from 33 weeks to 27 years, with an average followup time of 6.57 years between primary and last revision surgeries, and median time of 4.08 years between primary and last revision surgeries.
 
-The distributions of these variables can be seen in Figures A1--A4 (Section 8.1).
+The follow up of patients after ACLR ranged from 2 years to 10.3 years, with an average follow up of 4.18 years and median 3.08 years.
 
-The typical profile of the patient that required ACLR surgery was a 27 years female with an average BMI of 26.6 kg/m2.
+The distributions of these variables can be seen in Figures A1 -- A5 (Section 8.1).
+
+The epidemiological profile of the typical patient that required ACLR surgery was a 27 years female with an average BMI of 26.8 kg/m2.
+
 
 ## Surgical characteristics and baseline comparison
 
-Patients included in the study required grafts with diameters ranging from 19 to 40 mm.
+Patients included in the study required grafts with diameters ranging from 7.5 to 11 mm.
 Average graft diameter used was 9.6 mm with an SD of 0.7 mm.
-Most patients did not require procedures in the medial meniscus (47%), the lateral meniscus (57%) or in the cartilage (96%).
-A total of 14 patients (20%) had partial resection in the medial meniscus, indicating a possibility of arthrosis in the knee joint, and 13 (19%) had partial resection in the lateral meniscus.
+Most patients did not require procedures in the medial meniscus (48%), the lateral meniscus (58%) or in the cartilage (96%).
+A total of 13 patients (19%) had partial resection in the medial meniscus, indicating a possibility of arthrosis in the knee joint, and 12 (17%) had partial resection in the lateral meniscus.
 
-None of the characteristics evaluated in this study indicated significant differences when using the LET procedure compared to not using it (Table 1).
-Demographic characteristics had comparable distributions for
-sex (p =	0.334),
-age (Cohen's D = 0.32, 95% CI = -0.16, 0.80, p =	0.187) and
-BMI (Cohen's D = 0.20, 95% CI = -0.33, 0.73, p =	0.462).
+Most of the characteristics evaluated in this study did not indicate significant differences when using the LET procedure compared to not using it (Table 1).
+Demographic and clinical characteristics had comparable distributions for
+sex (p =	0.228),
+age (Cohen's D = 0.33, 95% CI = -0.16, 0.81, p =	0.179) and
+BMI (Cohen's D = 0.13, 95% CI = -0.40, 0.67, p =	0.619).
 Surgical characteristics also had comparable distributions for
-graft diameter (Cohen's D = 0.04, 95% CI = -0.43, 0.51, p =	0.877),
-medial meniscus (p = 0.582),
-lateral meniscus (p = 0.521) and
-cartilage (p = 0.496).
+graft diameter (Cohen's D = 0.05, 95% CI = -0.42, 0.53, p =	0.818),
+medial meniscus (p = 0.684),
+lateral meniscus (p = 0.569),
+cartilage (p = 0.498) and
+MTPS (Cohens' D = 0.03, 95% CI = -0.44, 0.51, p = 0.886).
+Follow up time was significantly lower for patients that had ACLR using the LET technique
+(Cohen's D = 0.78, 95% CI = 0.29, 1.3, p = 0.001).
 
 Table: **Table 1** Patient characteristics at baseline.  
 n (%); Mean (SD);
@@ -196,7 +202,7 @@ p-value = Fisher's exact test; Welch Two Sample t-test.
 inf_baseline %>% as_kable(align = "lcccccc")
 ```
 
-All of the observed Cohen's D standardized mean differences (Cohen, 1988) range from very small (d = 0.04) to small (d = 0.32).
+All of the observed Cohen's D standardized mean differences (Cohen, 1988) range from very small (d = 0.04) to medium (d = 0.78).
 Note that the minimum effect size detectable by this study would be of a medium effect size (d = 0.68, see **SAP-2021-004-TV-v01**) or larger.
 
 # Exceptions and Observations
@@ -205,45 +211,56 @@ N/A.
 
 # Conclusions
 
-The typical profile patient that required ACLR surgery was a 27 years female with an average BMI of 26.6 kg/m2.
+The epidemiological profile of the typical patient that required ACLR surgery was a 27 years female with an average BMI of 26.8 kg/m2.
 
-None of the characteristics evaluated in this study indicated significant differences when using the LET procedure compared to not using it.
+Follow up time after ACLR was significantly lower for the LET group (p = 0.001, d = 0.78).
+No other characteristics evaluated in this study indicated significant differences when using the LET procedure compared to not using it.
 Patients had comparable distributions for demographic characteristics such as 
-sex (p = 0.334),
-age (p = 0.187, d = 0.32) and
-BMI (p = 0.462, d = 0.20),
+sex (p = 0.228),
+age (p = 0.179, d = 0.33) and
+BMI (p = 0.619, d = 0.13),
 as well as surgical characteristics such as
-graft diameter (p = 0.877, d = 0.04),
-medial meniscus (p = 0.582),
-lateral meniscus (p = 0.521) and
-cartilage (p = 0.496).
+graft diameter (p = 0.818, d = 0.05),
+medial meniscus (p = 0.684),
+lateral meniscus (p = 0.569),
+cartilage (p = 0.498) and
+medial tibial posterior slope	(p = 0.886).
 
 Therefore, LET and no LET groups are comparable at baseline.
 
 # References
 
-- **SAP-2021-004-TV-v01** -- Statistical Analysis Plan for Epidemiological profile of patients undergoing ACLR and comparison of baseline characteristics between usage of the LET surgical technique
+- **SAP-2021-004-TV-v01** -- Analytical Plan for Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique.
 - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge.
 
 # Appendix
 
 ## Exploratory data analysis
 
-![](../figures/distr_age.png)
+```{r A1, fig.cap="**Figure A1** Distribution of age in the study population, according to the study group."}
+# ![Age](../figures/distr_age.png)
+knitr::include_graphics(here::here("figures", "distr_age.png"))
+```
 
-**Figure A1** Distribution of age in the study population.
+```{r A2, fig.cap="**Figure A2** Distribution of sex in the study population, according to the study group."}
+# ![](../figures/distr_sex.png)
+knitr::include_graphics(here::here("figures", "distr_sex.png"))
+```
 
-![](../figures/distr_sex.png)
+```{r, fig.cap="**Figure A3** Distribution of BMI in the study population, according to the study group."}
+# ![](../figures/distr_bmi.png)
+knitr::include_graphics(here::here("figures", "distr_bmi.png"))
+```
 
-**Figure A2** Distribution of sex in the study population, according to the study group.
+```{r, fig.cap="**Figure A4** Distribution of follow up time in the study population, according to the study group."}
+# ![](../figures/distr_fu.png)
+knitr::include_graphics(here::here("figures", "distr_fu.png"))
+```
 
-![](../figures/distr_bmi.png)
-
-**Figure A3** Distribution of BMI in the study population.
-
-![](../figures/distr_fu.png)
-
-**Figure A4** Distritubion of follow up time in the study population.
+```{r, fig.cap="**Figure A5** Distribution of MTPS time in the study population, according to the study group."}
+# ![](../figures/distr_mtps.png)
+knitr::include_graphics(here::here("figures", "distr_mtps.png"))
+```
 
 
 ## Availability
@@ -258,7 +275,8 @@ Due to confidentiality the data-set used in this analysis cannot be shared onlin
 
 ```{r data}
 # print analytical of analytical_mockup whether it is the private or public version of the SAR
-# analytical %>%
-analytical_mockup %>%
+analytical %>%
   pander(caption = "**Table A1** Analytical dataset")
+analytical_mockup %>%
+  pander(caption = "**Table A1** Analytical dataset structure")
 ```

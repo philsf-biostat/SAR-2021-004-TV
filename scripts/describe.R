@@ -14,14 +14,23 @@ analytical %>%
 
 # follow up
 data.raw %>%
-  transmute(dos_pri, dos, fu = as.duration(interval(dos_pri, dos)) ) %>%
+  transmute(fu_months = duration(fu_months, "month") ) %>%
+  summary()
+
+# surgery dates
+data.raw %>%
+  transmute(dos_pri, dos, bt = as.duration(interval(start = dos_pri, end = dos))) %>%
   summary()
 
 ## interpret cohenD effect sizes
 
-effectsize::interpret_d(.32)
-effectsize::interpret_d(.20)
-effectsize::interpret_d(.04)
+effectsize::interpret_d(.33)
+effectsize::interpret_d(.13)
+effectsize::interpret_d(.05)
+effectsize::interpret_d(.78)
+effectsize::interpret_d(.03)
+
+# minimum detectable effect size
 effectsize::interpret_d(.68)
 
 # tables ------------------------------------------------------------------

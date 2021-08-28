@@ -8,9 +8,13 @@ theme_set(theme_classic())
 
 ## demographic
 gg.age <- analytical %>%
-  ggplot(aes(age, ..count../sum(..count..))) +
-  geom_histogram(binwidth = 10, fill = "steelblue") +
-  scale_y_continuous(labels = scales::label_percent()) +
+  ggplot(aes(age, col = let, fill = let)) +
+  # geom_histogram(binwidth = 10, fill = "steelblue") +
+  # scale_y_continuous(labels = scales::label_percent()) +
+  geom_density(bw = 5, alpha = .4) +
+  scale_fill_brewer(palette = "Paired") +
+  scale_color_brewer(palette = "Paired") +
+  theme(legend.position = "top") +
   labs(x = "Age (years)", y = "")
 
 gg.sex <- analytical %>%
@@ -21,20 +25,32 @@ gg.sex <- analytical %>%
   theme(legend.position = "top") +
   labs(x = "", y = "")
 
-gg.bmi <-analytical %>%
-  ggplot(aes(bmi, ..count../sum(..count..))) +
-  geom_histogram(binwidth = 5, fill = "steelblue") +
-  scale_y_continuous(labels = scales::label_percent()) +
+gg.bmi <- analytical %>%
+  ggplot(aes(bmi, col = let, fill = let)) +
+  # geom_histogram(binwidth = 5, fill = "steelblue") +
+  # scale_y_continuous(labels = scales::label_percent()) +
+  geom_density(bw = 3, alpha = .4) +
+  scale_fill_brewer(palette = "Paired") +
+  scale_color_brewer(palette = "Paired") +
+  theme(legend.position = "top") +
   labs(x = "BMI (kg/m2)", y = "")
 
 ## Follow up
 
-year_sec <- duration(1, "year") / duration(1, "second")
+gg.followup <- analytical %>%
+  ggplot(aes(fu_months, col = let, fill = let)) +
+  # geom_histogram(binwidth = 12, fill = "steelblue") +
+  # scale_y_continuous(labels = scales::label_percent()) +
+  geom_density(bw = 12, alpha = .4) +
+  scale_fill_brewer(palette = "Paired") +
+  scale_color_brewer(palette = "Paired") +
+  theme(legend.position = "top") +
+  labs(x = "Follow up after ACLR (months)", y = "")
 
-gg.followup <- data.raw %>%
-  transmute(let, fu = as.duration(interval(dos_pri, dos)) ) %>%
-  ggplot(aes(fu / year_sec, ..count../sum(..count..))) + # seconds in 1 year
-  geom_histogram(binwidth = 5, fill = "steelblue") +
-  scale_y_continuous(labels = scales::label_percent()) +
-  labs(x = "Follow up time (years)", y = "")
-
+gg.mtps <- analytical %>%
+  ggplot(aes(mtps, col = let, fill = let)) +
+  geom_density(bw = 3, alpha = .4) +
+  scale_fill_brewer(palette = "Paired") +
+  scale_color_brewer(palette = "Paired") +
+  theme(legend.position = "top") +
+  labs(x = "Medial tibial posterior slope", y = "")

@@ -1,5 +1,5 @@
 ---
-title: "Statistical Analysis Plan for Epidemiological profile of patients undergoing ACLR and comparison of baseline characteristics between usage of the LET surgical technique"
+title: "Analytical Plan for Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique"
 subtitle: 'DOCUMENT: SAP-2021-004-TV-v01'
 author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
 date: '**Date:** 2021-08-24'
@@ -66,7 +66,7 @@ kable(history)
 
 ## Objectives
 
-Compare the baseline characteristics of patients undergoing ACL revision (ACLR) surgery whether or not they the LET technique was employed in the ACLR.
+Compare the baseline demographic and clinical characteristics of patients undergoing Anterior Cruciate Ligament Revision surgery whether or not they the Lateral Extra-articular Tenodesis technique was employed.
 
 ## Hypotheses
 
@@ -182,7 +182,7 @@ N/A.
 
 # References
 
-- **SAR-2021-004-TV-v01** -- Epidemiological profile of patients undergoing ACLR and comparison of baseline characteristics between usage of the LET surgical technique.
+- **SAR-2021-004-TV-v01** -- Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique.
 - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge.
 
 # Appendix

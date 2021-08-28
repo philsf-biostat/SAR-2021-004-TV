@@ -5,7 +5,9 @@
 <!-- - v02: substitute project in ppp01/ppp02 -->
 <!-- - Remove this block -->
 
-# Epidemiological profile of patients undergoing ACLR and comparison of baseline characteristics between usage of the LET surgical technique
+# Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique
+
+Compare the baseline demographic and clinical characteristics of patients undergoing Anterior Cruciate Ligament Revision surgery whether or not they the Lateral Extra-articular Tenodesis technique was employed.
 
 Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 2021)
 
@@ -13,14 +15,11 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 
 1. Descriptive analysis
 1. Inferential analysis
-<!-- 1. Statistical models -->
 1. Power analysis
 
 ## Documents
 
-### Statistical Analysis Plan
-
-**SAP** - Statistical Analysis Plan
+### SAP - Analytical Plan
 
 - [Online visualization][sapviz-v01]
 - [Download][sappdf-v01]
@@ -29,7 +28,7 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 [sapviz-v01]: report/SAP-2021-004-TV-v01.md
 [sappdf-v01]: report/SAP-2021-004-TV-v01.pdf?raw=true
 
-### Statistical Analysis Report
+### SAR - Statistical Analysis Report
 
 <!-- **Version 02** - [Ongoing][v02-project]. -->
 <!-- <\!-- **Version 02** - [Concluded][v02-project]. -\-> -->
