@@ -19,6 +19,9 @@ data.raw <- read_excel("dataset/REVISION_ACL_DEIDENTIFIED_MASTER (4) PROMs_final
 
 # data.raw <- data.raw %>%
 #   select(!ends_with(c("_pri", "_inj", "_pri_inj")))
+data.raw <- data.raw %>%
+  # records excluded
+  filter(id != 261)
 
 # data wrangling ----------------------------------------------------------
 
