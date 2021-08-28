@@ -57,6 +57,7 @@ kable(history)
 - LCL: lateral collateral ligament
 - LET: lateral extra-articular tenodesis
 - MCL: medial collateral ligament
+- MTPS: medial tibial posterior slope
 - PCL: posterior cruciate ligament
 
 # Introduction
@@ -107,7 +108,7 @@ The resulting "clean" raw data sheet was shared with the client for archival pur
 
 All variables in the analytical set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
 
-After the cleaning process `r ncol(analytical)` variables were included in the analysis with `r nrow(ncol)` observations.
+After the cleaning process `r ncol(analytical)` variables were included in the analysis with `r nrow(analytical)` observations.
 Table 1 shows the structure of the analytical dataset.
 
 ```{r}
