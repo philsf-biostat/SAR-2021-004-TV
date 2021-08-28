@@ -173,21 +173,24 @@ The epidemiological profile of the typical patient that required ACLR surgery wa
 
 ## Surgical characteristics and baseline comparison
 
-Patients included in the study required grafts with diameters ranging from 19 to 40 mm.
+Patients included in the study required grafts with diameters ranging from 7.5 to 11 mm.
 Average graft diameter used was 9.6 mm with an SD of 0.7 mm.
-Most patients did not require procedures in the medial meniscus (47%), the lateral meniscus (57%) or in the cartilage (96%).
-A total of 14 patients (20%) had partial resection in the medial meniscus, indicating a possibility of arthrosis in the knee joint, and 13 (19%) had partial resection in the lateral meniscus.
+Most patients did not require procedures in the medial meniscus (48%), the lateral meniscus (58%) or in the cartilage (96%).
+A total of 13 patients (19%) had partial resection in the medial meniscus, indicating a possibility of arthrosis in the knee joint, and 12 (17%) had partial resection in the lateral meniscus.
 
-None of the characteristics evaluated in this study indicated significant differences when using the LET procedure compared to not using it (Table 1).
-Demographic characteristics had comparable distributions for
-sex (p =	0.334),
-age (Cohen's D = 0.32, 95% CI = -0.16, 0.80, p =	0.187) and
-BMI (Cohen's D = 0.20, 95% CI = -0.33, 0.73, p =	0.462).
+Most of the characteristics evaluated in this study did not indicate significant differences when using the LET procedure compared to not using it (Table 1).
+Demographic and clinical characteristics had comparable distributions for
+sex (p =	0.228),
+age (Cohen's D = 0.33, 95% CI = -0.16, 0.81, p =	0.179) and
+BMI (Cohen's D = 0.13, 95% CI = -0.40, 0.67, p =	0.619).
 Surgical characteristics also had comparable distributions for
-graft diameter (Cohen's D = 0.04, 95% CI = -0.43, 0.51, p =	0.877),
-medial meniscus (p = 0.582),
-lateral meniscus (p = 0.521) and
-cartilage (p = 0.496).
+graft diameter (Cohen's D = 0.05, 95% CI = -0.42, 0.53, p =	0.818),
+medial meniscus (p = 0.684),
+lateral meniscus (p = 0.569),
+cartilage (p = 0.498) and
+MTPS (Cohens' D = 0.03, 95% CI = -0.44, 0.51, p = 0.886).
+Follow up time was significantly lower for patients that had ACLR using the LET technique
+(Cohen's D = 0.78, 95% CI = 0.29, 1.3, p = 0.001).
 
 Table: **Table 1** Patient characteristics at baseline.  
 n (%); Mean (SD);
