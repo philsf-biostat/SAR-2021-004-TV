@@ -13,7 +13,7 @@ theme_gtsummary_mean_sd() # mean/sd
 
 inf_base <- analytical %>%
   # select variables for table
-  select(let, sex, age, bmi, graft_diameter, medial_meniscus, lateral_meniscus, cartilage) %>%
+  select(let, sex, age, bmi, graft_diameter, fu_months, medial_meniscus, lateral_meniscus, cartilage, mtps) %>%
   # draw table
   tbl_summary(
     by = let,
