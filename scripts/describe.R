@@ -24,9 +24,13 @@ data.raw %>%
 
 ## interpret cohenD effect sizes
 
-effectsize::interpret_d(.32)
-effectsize::interpret_d(.20)
-effectsize::interpret_d(.04)
+effectsize::interpret_d(.33)
+effectsize::interpret_d(.13)
+effectsize::interpret_d(.05)
+effectsize::interpret_d(.78)
+effectsize::interpret_d(.03)
+
+# minimum detectable effect size
 effectsize::interpret_d(.68)
 
 # tables ------------------------------------------------------------------
