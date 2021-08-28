@@ -13,4 +13,5 @@ ggsave("figures/distr_age.png", plot = gg.age, height = height, width = width, u
 ggsave("figures/distr_sex.png", plot = gg.sex, height = height, width = width, units = "cm")
 ggsave("figures/distr_bmi.png", plot = gg.bmi, height = height, width = width, units = "cm")
 ggsave("figures/distr_fu.png", plot = gg.followup, height = height, width = width, units = "cm")
+ggsave("figures/distr_mtps.png", plot = gg.mtps, height = height, width = width, units = "cm")
 
