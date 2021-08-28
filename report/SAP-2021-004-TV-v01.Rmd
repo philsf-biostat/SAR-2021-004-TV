@@ -1,5 +1,5 @@
 ---
-title: "Analytical Plan for Comparison of baseline characteristics of patients undergoing ACLR under usage of the LET surgical technique"
+title: "Analytical Plan for Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique"
 subtitle: 'DOCUMENT: SAP-2021-004-TV-v01'
 author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
 date: '**Date:** 2021-08-24'
@@ -182,7 +182,7 @@ N/A.
 
 # References
 
-- **SAR-2021-004-TV-v01** -- Comparison of baseline characteristics of patients undergoing ACLR under usage of the LET surgical technique.
+- **SAR-2021-004-TV-v01** -- Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique.
 - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge.
 
 # Appendix

@@ -5,7 +5,7 @@
 <!-- - v02: substitute project in ppp01/ppp02 -->
 <!-- - Remove this block -->
 
-# Comparison of baseline characteristics of patients undergoing ACLR under usage of the LET surgical technique
+# Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique
 
 Compare the baseline demographic and clinical characteristics of patients undergoing Anterior Cruciate Ligament Revision surgery whether or not they the Lateral Extra-articular Tenodesis technique was employed.
 
