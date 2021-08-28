@@ -17,6 +17,11 @@ data.raw %>%
   transmute(fu_months = duration(fu_months, "month") ) %>%
   summary()
 
+# surgery dates
+data.raw %>%
+  transmute(dos_pri, dos, bt = as.duration(interval(start = dos_pri, end = dos))) %>%
+  summary()
+
 ## interpret cohenD effect sizes
 
 effectsize::interpret_d(.32)

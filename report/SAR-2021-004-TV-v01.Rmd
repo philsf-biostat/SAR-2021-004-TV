@@ -156,13 +156,13 @@ This analysis was performed using statistical software `R` version `r getRversio
 
 ## Study population and follow up
 
-A total of 70 patients that undergone ACLR surgery were included in the study, where the LET technique was used in 32 patients and 38 acted as a control.
+A total of 69 patients that undergone ACLR surgery were included in the study, where the LET technique was used in 31 patients and 38 acted as a control.
 Ages varied between 14 and 55 years, with an average age of 27 years with a SD of 10 years.
-There were 29 (41%) male patients and 41 (59%) female.
-Patients had BMI values ranging from 19 to 40 kg/m2 with average BMI of 26.6 kg/m2 and SD 4.5 kg/m2.
+There were 28 (41%) male patients and 41 (59%) female.
+Patients had BMI values ranging from 20.5 to 40 kg/m2 with average BMI of 26.8 kg/m2 and median 26 kg/m2.
 
-Primary ACL surgeries recorded occurred between 1984-01-01 and 2017-08-30, and ACL revisions occurred between 2010-03-09 and 2020-07-17.
-Per patient follow up time between the two primary ACL and ACLR ranged from 33 weeks to 27 years, with an average followup time of 6.57 years, and median follow-up time of 4.08 years.
+Primary ACL surgeries recorded occurred between 1984-01-01 and 2017-08-30, and ACL revisions occurred between 2010-03-09 and 2019-05-31.
+Per patient time between the primary ACL and the most recent ACLR ranged from 33 weeks to 27 years, with an average followup time of 6.57 years between primary and last revision surgeries, and median time of 4.08 years between primary and last revision surgeries.
 
 The follow up of patients after ACLR ranged from 2 years to 10.3 years, with an average follow up of 4.18 years and median 3.08 years.
 
