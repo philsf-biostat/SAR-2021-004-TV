@@ -19,7 +19,7 @@ data.raw %>%
 
 # surgery dates
 data.raw %>%
-  transmute(dos_pri, dos, bt = as.duration(interval(start = dos_pri, end = dos))) %>%
+  transmute(dob, dos_pri, dos, bt = as.duration(interval(start = dos_pri, end = dos))) %>%
   summary()
 
 ## interpret cohenD effect sizes
