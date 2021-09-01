@@ -19,34 +19,35 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 
 ## Documents
 
-### SAP - Analytical Plan
+### Analytical Plan (SAP)
 
 - [Online visualization][sapviz-v02]
 - [Download][sappdf-v02]
 <!-- - Download -->
 
-[sapviz-v01]: report/SAP-2021-004-TV-v01.md
-[sappdf-v01]: report/SAP-2021-004-TV-v01.pdf?raw=true
-[sapviz-v02]: report/SAP-2021-004-TV-v02.md
-[sappdf-v02]: report/SAP-2021-004-TV-v02.pdf?raw=true
-
-### SAR - Statistical Analysis Report
-
-<!-- **Version 02** - [Ongoing][v02-project]. -->
-<!-- <\!-- **Version 02** - [Concluded][v02-project]. -\-> -->
+### Statistical Analysis Report (SAR)
 
 <!-- - [Online visualization][reportviz-v02] -->
 <!-- - Download -->
 <!-- <\!-- - [Download][pdf-v02] -\-> -->
 
-<!-- --- -->
-
-<!-- **Version 01** - [Ongoing][v01-project]. -->
-**Version 01** - [Concluded][v01-project].
-
 - [Online visualization][reportviz-v01]
 - [Download][pdf-v01]
 <!-- - Download -->
+
+## Portfolio
+
+This analysis is included in the consultant's portfolio.
+Other analyses performed can also be seen at:
+
+https://philsf-biostat.github.io/
+
+<!-- --- -->
+
+[sapviz-v01]: report/SAP-2021-004-TV-v01.md
+[sappdf-v01]: report/SAP-2021-004-TV-v01.pdf?raw=true
+[sapviz-v02]: report/SAP-2021-004-TV-v02.md
+[sappdf-v02]: report/SAP-2021-004-TV-v02.pdf?raw=true
 
 [milestone-v01]: https://github.com/philsf-biostat/SAR-2021-004-TV/milestone/1
 [reportviz-v01]: report/SAR-2021-004-TV-v01.md
