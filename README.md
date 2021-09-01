@@ -21,12 +21,14 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 
 ### SAP - Analytical Plan
 
-- [Online visualization][sapviz-v01]
-- [Download][sappdf-v01]
+- [Online visualization][sapviz-v02]
+- [Download][sappdf-v02]
 <!-- - Download -->
 
 [sapviz-v01]: report/SAP-2021-004-TV-v01.md
 [sappdf-v01]: report/SAP-2021-004-TV-v01.pdf?raw=true
+[sapviz-v02]: report/SAP-2021-004-TV-v02.md
+[sappdf-v02]: report/SAP-2021-004-TV-v02.pdf?raw=true
 
 ### SAR - Statistical Analysis Report
 

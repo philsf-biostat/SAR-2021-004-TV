@@ -1,0 +1,196 @@
+---
+title: "Analytical Plan for Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique"
+subtitle: 'DOCUMENT: SAP-2021-004-TV-v02'
+author: '**From:** Felipe Figueiredo **To:** Thiago Vivacqua'
+date: '**Date:** 2021-09-01'
+output:
+  html_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    number_sections: yes
+    toc: yes
+  word_document:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 6
+    reference_docx: misc/style_SAP_en_2.docx
+    toc: yes
+# toc-title: "Sumário"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = normalizePath(".."))
+options(scipen = 999)
+library(pander)
+library(knitr)
+library(philsfmisc)
+panderOptions('table.style', 'rmarkdown')
+panderOptions('table.split.table', Inf)
+```
+
+---
+
+**Document version**
+
+```{r, echo = FALSE}
+Version <- c("01", "02")
+Changes <- c("Initial version",
+             "Data: patient ages were computed from dates with calendar accuracy")
+history <- cbind(Version, Changes)
+colnames(history) <- c("Version", "Alterations")
+# pander(history, split.cells = 70)
+kable(history)
+```
+
+---
+
+# Abbreviations
+
+- ACL: anterior cruciate ligament
+- ACLR: ACL revision
+- BMI: body mass index
+- LCL: lateral collateral ligament
+- LET: lateral extra-articular tenodesis
+- MCL: medial collateral ligament
+- MTPS: medial tibial posterior slope
+- PCL: posterior cruciate ligament
+
+# Introduction
+
+## Context
+
+## Objectives
+
+Compare the baseline demographic and clinical characteristics of patients undergoing Anterior Cruciate Ligament Revision surgery whether or not they the Lateral Extra-articular Tenodesis technique was employed.
+
+## Hypotheses
+
+LET and no LET groups are comparable at baseline.
+
+# Data cleaning
+
+```{r cleaning, include=FALSE}
+source("scripts/input.R", encoding = 'UTF-8')
+```
+
+## Raw data
+
+The raw data was provided in an Excel file with two sheets, one for each group (LET and No LET).
+As a firsts processing step the raw data was copied into a new sheet with both groups, with one observation (patient) per line.
+The column structure of the resulting "clean" table corresponds to the original per-group tables.
+
+In total there were 126 variables in the dataset received.
+Variables in the raw data sheet were grouped into sections.
+For this analysis only the baseline **demographic** characteristics and the variables in the **surgical data most recent revision ACLR** section were selected.
+
+Column names were adjusted to avoid repeated names, using suffixes to identify the section each variable originally came from, as follows:
+
+- section `concomitant injuries primary ACLR` -- received the `pri.inj` suffix
+- section `Concomitant injuries most recent revision ACLR` -- received the `inj` suffix
+- section `surgical data primary ACLR` -- received the `pri` suffix
+- section `surgical data most recent revision ACLR` -- names were kept as the original
+
+Some dates in `Date of last clinical visit` column (`Follow-up notes` data section) were typed with different separator symbols, and all values in this column were standardized to allow date format recognition.
+
+Ages were calculated as the number of years between the date of birth and the date of ACLR surgery, with calendar accuracy.
+
+There were two columns named `grade` (`Slope` data section), and they were both renamed `grade1` and `grade2`.
+
+The original raw data provided descriptive information for the encoding of each variable in the first line.
+A Data Dictionary was created from this information and was saved in a separate table for ease of consultation and processing.
+
+The resulting "clean" raw data sheet was shared with the client for archival purposes.
+
+## Analytical dataset
+
+All variables in the analytical set were labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
+
+After the cleaning process `r ncol(analytical)` variables were included in the analysis with `r nrow(analytical)` observations.
+Table 1 shows the structure of the analytical dataset.
+
+```{r}
+analytical_mockup %>%
+  pander(caption = "**Table 1** Analytical dataset structure after variable selection and cleaning.")
+```
+
+The analytical dataset will be included in the private version of the report, and will be omitted from the public version of the report.
+
+# Study variables
+
+## Primary and secondary outcomes
+
+This analysis describes the epidemiological characteristics of surgical patients that undergone ACLR, and no endpoints will be assessed.
+
+## Covariates
+
+The distribution of the characteristics will be compared at baseline between the two study groups.
+Variables to be considered for baseline comparison are:
+
+- Age
+- Sex
+- BMI
+- Graft diameter
+- Medial meniscus
+- Lateral meniscus
+- Cartilage
+
+# Statistical methods
+
+## Statistical analyses
+
+### Descriptive analyses
+
+The epidemiological profile of each study group (LET and no LET) will be described at baseline.
+Demographic and clinical variables will be described as mean and standard deviation or as counts and proportions, as appropriate.
+Distributions will be summarized in tables and visualized in exploratory plots.
+
+### Inferential analyses
+
+All comparisons will be performed as univariate analyses.
+Continuous variables will be compared between groups with the independent t test with Welch correction.
+Difference in distribution of categorical variables will be assessed with the Fisher exact test.
+
+### Statistical modeling
+
+No adjustment for covariates will be performed.
+
+## Significance and Confidence Intervals
+
+All analyses will be performed using the significance level of 5%.
+All significance hypothesis tests and confidence intervals computed will be two-tailed.
+
+## Study size and Power
+
+Raw data received has 70 observations corresponding to patients assessed at primary ACL surgery and ACL revision.
+Surgeries that employed the LET technique include 38 patients and 32 patients undergone surgery with LET technique.
+
+With these group sizes a t test can detect an effect size as large as
+**d = `r format.float(pwr::pwr.t2n.test(n1 = 38, n2 = 32, power = .8, sig.level = .05)$d)`**
+with 80% power and 5% significance level (Cohen, 1988).
+
+### Statistical packages
+
+This analysis will be performed using statistical software `R` version `r getRversion()`.
+
+# Exceptions and Observations
+
+N/A.
+
+# References
+
+- **SAR-2021-004-TV-v01** -- Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique.
+- Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge.
+
+# Appendix
+
+## Availability
+
+Both this analytical plan and the corresponding analysis report (**SAR-2021-004-TV-v01**) can be downloaded in the following address:
+
+`https://github.com/philsf-biostat/SAR-2021-004-TV/`
