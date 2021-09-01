@@ -30,6 +30,8 @@ data.raw <- data.raw %>%
   mutate(
     id = factor(id),
     sex = factor(sex, levels = 1:2, labels = c("1"="male", "2"="female")),
+    # compute calendar-accurate ages
+    age = floor( interval(start = dob, end = dos)/dyears(1) ),
     stage = factor(stage, levels = 1:2, labels = c("1"="one-stage", "2"="two-stage")),
     graft = factor(graft, levels = 1:9, labels = c("1"="HT", "2"="QTB", "3"="QTS", "4"="BPTB", "5"="AG", "6"="hybrid", "7"="DB-HT", "8"="DB-AG", "9"="n/a")),
     femoral_fixation = factor(femoral_fixation, levels = c(0:3, 5), labels = c("0"="n/a", "1"="suspensory", "2"="overthetop", "3"="interference screw", "5"="hybrid")),
