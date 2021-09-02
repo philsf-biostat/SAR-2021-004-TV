@@ -22,6 +22,11 @@ data.raw %>%
   transmute(dob, dos_pri, dos, bt = as.duration(interval(start = dos_pri, end = dos))) %>%
   summary()
 
+# CV followup
+analytical %>%
+  group_by(let) %>%
+  summarise(CV = sd(fu_months)/ mean(fu_months))
+
 ## interpret cohenD effect sizes
 
 effectsize::interpret_d(.33)
