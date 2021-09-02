@@ -158,7 +158,7 @@ This analysis was performed using statistical software `R` version `r getRversio
 ## Study population and follow up
 
 A total of 69 patients that undergone ACLR surgery were included in the study, where the LET technique was used in 31 patients and 38 acted as a control.
-Ages varied between 14 and 55 years, with an average age of 27 years with a SD of 10 years.
+Ages varied between 14 and 55 years, with an average age of 27 years with an SD of 10 years.
 There were 28 (41%) male patients and 41 (59%) female.
 Patients had BMI values ranging from 20.5 to 40 kg/m2 with average BMI of 26.8 kg/m2 and median 26 kg/m2.
 
