@@ -40,7 +40,7 @@ Statistical Analysis for Thiago Vivacqua (Fowler Kennedy Sport Medicine Clinic, 
 This analysis is included in the consultant's portfolio.
 Other analyses performed can also be seen at:
 
-https://philsf-biostat.github.io/
+<https://philsf-biostat.github.io/>
 
 <!-- --- -->
 
