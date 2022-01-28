@@ -36,6 +36,10 @@ panderOptions('table.split.table', Inf)
 
 ---
 
+\newpage
+
+**Comparison of baseline characteristics of patients undergoing ACLR under the option of the LET surgical technique**
+
 **Document version**
 
 ```{r, echo = FALSE}
@@ -49,29 +53,6 @@ kable(history)
 ```
 
 ---
-
-<!-- # Assinaturas -->
-
-<!-- ```{r, echo=FALSE} -->
-<!-- sig.field <- "__________________________" -->
-<!-- date.field <- "_____________" -->
-<!-- Stat <- c("Elaborador", "Nome", "Função", sig.field, date.field) -->
-<!-- Reviewer <- c("Revisado por", "", "", sig.field, date.field) -->
-<!-- Approver <- c("Verificado por", "", "", sig.field, date.field) -->
-<!-- Final.Approver <- c("Aprovação final", "", "", sig.field, date.field) -->
-
-<!-- sigs <- rbind( -->
-<!--   Stat -->
-<!--   , Reviewer -->
-<!--   , Approver -->
-<!--   , Final.Approver -->
-<!--   ) -->
-<!-- rownames(sigs) <- NULL -->
-<!-- colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data") -->
-
-<!-- # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf) -->
-<!-- kable(sigs) -->
-<!-- ``` -->
 
 ```{r results, include=FALSE}
 source("scripts/results.R", encoding = 'UTF-8')
@@ -90,9 +71,7 @@ source("scripts/results.R", encoding = 'UTF-8')
 - PCL: posterior cruciate ligament
 - SD: standard deviation
 
-# Introduction
-
-## Context
+# Context
 
 ## Objectives
 
@@ -151,7 +130,7 @@ All significance hypothesis tests and confidence intervals computed were two-tai
 
 ### Statistical packages
 
-This analysis was performed using statistical software `R` version `r getRversion()`.
+This analysis was performed using statistical software `R` version 4.1.1.
 
 # Results
 
@@ -206,7 +185,7 @@ inf_baseline %>% as_kable(align = "lcccccc")
 All of the observed Cohen's D standardized mean differences (Cohen, 1988) range from very small (d = 0.04) to medium (d = 0.78).
 Note that the minimum effect size detectable by this study would be of a medium effect size (d = 0.68, see **SAP-2021-004-TV-v01**) or larger.
 
-# Exceptions and Observations
+# Observations and Limitations
 
 Most characteristics evaluated here have similar statistical metrics, when observing the mean and the SD.
 The exception is the follow up duration, where the LET group had a significantly lower average than the non LET group (Table 1, Figure A4).
@@ -274,9 +253,17 @@ knitr::include_graphics("../figures/distr_mtps.png", error = FALSE)
 
 ## Availability
 
-This document can be downloaded in the following address:
+Both this document and the corresponding analytical plan (**SAP-2021-004-TV-v01**) can be downloaded in the following address:
 
-`https://github.com/philsf-biostat/SAR-2021-004-TV/`
+<!-- This document can be downloaded in the following address: -->
+
+<https://philsf-biostat.github.io/SAR-2021-004-TV/>
+
+<!-- The client has requested that this analysis be kept confidential. -->
+<!-- Both this document and the corresponding analytical plan (**SAP-2021-004-TV-v01**) are therefore not published online and only the title and year of the analysis will be included in the consultant's Portfolio. -->
+<!-- The portfolio is available at: -->
+
+<!-- <https://philsf-biostat.github.io/> -->
 
 ## Analytical dataset
 
@@ -284,6 +271,7 @@ Due to confidentiality the data-set used in this analysis cannot be shared onlin
 
 ```{r data}
 # print analytical of analytical_mockup whether it is the private or public version of the SAR
+
 # analytical %>%
 #   pander(caption = "**Table A1** Analytical dataset")
 analytical_mockup %>%
